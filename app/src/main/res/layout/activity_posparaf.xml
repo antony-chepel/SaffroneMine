@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_saf"
+    tools:context=".ywqasxc.Posparaf">
+
+    <ImageView
+        android:id="@+id/chhx"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdoasdo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pdoasdo"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/saff_1" />
+
+    <ImageView
+        android:id="@+id/pdoasdo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        app:srcCompat="@drawable/saff_3" />
+
+    <ImageView
+        android:id="@+id/vjicix"
+        android:layout_width="100dp"
+        android:elevation="10dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pdoasdo"
+        app:layout_constraintTop_toTopOf="@+id/pdoasdo"
+        app:srcCompat="@drawable/saff_4" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        app:strokeWidth="3dp"
+        app:cardBackgroundColor="@color/bg_sim_card"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/pdoasdo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView2"
+        android:layout_width="120dp"
+        app:strokeWidth="3dp"
+        app:cardBackgroundColor="@color/bg_sim_card"
+        android:layout_height="120dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView3"
+        android:layout_width="120dp"
+        app:strokeWidth="3dp"
+        app:cardBackgroundColor="@color/bg_sim_card"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:text="Attch items to saffrone containers and wait points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roosokdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Timer"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/roosokdo"
+        app:layout_constraintEnd_toStartOf="@+id/roosokdo"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roosokdo"
+        app:srcCompat="@drawable/sim_timer" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="250dp"
+        app:strokeWidth="3dp"
+        app:cardBackgroundColor="@color/bg_sim_card"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/pdoasdo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points power : x2"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

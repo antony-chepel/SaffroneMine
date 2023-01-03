@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Saffron Mine</string>
+    <string name="image_chooser">Choose Image</string>
+    <string name="facebook_app_id">843781330101718</string>
+    <string name="fb_login_protocol_scheme">fb843781330101718</string>
+</resources>
